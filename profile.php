@@ -109,6 +109,7 @@ if (strlen($_SESSION['login']) == 0) {
 
     <?php
     $useremail = $_SESSION['login'];
+    echo($useremail);
     $sql = "SELECT * FROM tblusers WHERE EmailId LIKE :useremail";
     $query = $dbh->prepare($sql);
     $query->bindParam(':useremail', $useremail, PDO::PARAM_STR);
