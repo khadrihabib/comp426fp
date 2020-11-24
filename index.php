@@ -32,7 +32,7 @@ error_reporting(0);
   <link rel="apple-touch-icon-precomposed" href="assets/images/favicon-icon/apple-touch-icon-57-precomposed.png">
   <link rel="shortcut icon" href="assets/images/favicon-icon/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHJyTJzGwj0yIrOrOMdd2Tt-YEJYDjgSo&callback=initmap" async="" defer="defer" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHJyTJzGwj0yIrOrOMdd2Tt-YEJYDjgSo" async="" defer="defer" type="text/javascript"></script>
   <script>
     function showPosition() {
       if (navigator.geolocation) {
