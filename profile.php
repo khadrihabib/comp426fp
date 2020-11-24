@@ -109,7 +109,6 @@ if (strlen($_SESSION['login']) == 0) {
 
     <?php
     $useremail = $_SESSION['login'];
-    echo($useremail);
     $sql = "SELECT * FROM tblusers WHERE EmailId LIKE :useremail";
     $query = $dbh->prepare($sql);
     $query->bindParam(':useremail', $useremail, PDO::PARAM_STR);
@@ -156,7 +155,7 @@ if (strlen($_SESSION['login']) == 0) {
                       </div>
                       <div class="form-group">
                         <label class="control-label">Email Address</label>
-                        <input class="form-control white_bg" value="<?php echo htmlentities($result->EmailId); ?>" name="emailid" id="email" type="email" required readonly>
+                        <input class="form-control white_bg" value="<?php echo $useremail; ?>" name="emailid" id="email" type="email" required readonly>
                       </div>
                       <div class="form-group">
                         <label class="control-label">Phone Number</label>
