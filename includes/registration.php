@@ -5,7 +5,7 @@ if (isset($_POST['signup'])) {
   $email = $_POST['emailid'];
   $mobile = $_POST['mobileno'];
   $password = md5($_POST['password']);
-  $sql = "INSERT INTO  tblusers(FullName, EmailId, ContactNo, Password) VALUES(:fname,:email,:mobile,:password)";
+  $sql = "INSERT INTO tblusers(FullName, EmailId, ContactNo, Password) VALUES(:fname,:email,:mobile,:password)";
   $query = $dbh->prepare($sql);
   $query->bindParam(':fname', $fname, PDO::PARAM_STR);
   $query->bindParam(':email', $email, PDO::PARAM_STR);
